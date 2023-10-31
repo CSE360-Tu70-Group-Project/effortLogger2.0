@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SupervisorConsoleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="50.0" layoutX="-64.0" stroke="#31913e" strokeType="INSIDE" strokeWidth="2.0" width="1009.0" />
+      <Label layoutX="351.0" layoutY="2.0" text="Supervisor Console">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="proceed" layoutX="37.0" layoutY="6.0" mnemonicParsing="false" onAction="#onProceed" prefHeight="37.0" prefWidth="234.0" text="Proceed to the Effort Log Console" />
+   </children>
+</AnchorPane>

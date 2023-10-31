@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EffortConsoleController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="50.0" layoutX="-64.0" stroke="#31913e" strokeType="INSIDE" strokeWidth="2.0" width="1009.0" />
+      <Label layoutX="351.0" layoutY="2.0" text="Effort Logger Console">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="clockRectangle" fill="#ff491f" height="50.0" layoutX="58.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="830.0" />
+      <Label fx:id="clockLabel" alignment="CENTER" layoutX="390.0" layoutY="73.0" text="Clock is stopped" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="startActivity" alignment="CENTER" layoutX="108.0" layoutY="172.0" mnemonicParsing="false" onAction="#onStartActivity" prefHeight="38.0" prefWidth="214.0" text="Start an Activity" />
+      <Label layoutX="58.0" layoutY="147.0" text="1. When you start a new activity press the &quot;Start an Activity&quot; button">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="225.0" text="2. Select the project, life cycle step, effort category, and deliverable from the following lists:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="63.0" layoutY="270.0" prefHeight="26.0" prefWidth="193.0" />
+      <ChoiceBox layoutX="271.0" layoutY="270.0" prefHeight="26.0" prefWidth="193.0" />
+      <ChoiceBox layoutX="694.0" layoutY="270.0" prefHeight="26.0" prefWidth="193.0" />
+      <ChoiceBox layoutX="484.0" layoutY="270.0" prefHeight="26.0" prefWidth="193.0" />
+      <Label layoutX="63.0" layoutY="252.0" text="Project:" />
+      <Label layoutX="271.0" layoutY="252.0" text="Life Cycle Step:" />
+      <Label layoutX="485.0" layoutY="252.0" text="Effort Category:" />
+      <Label layoutX="694.0" layoutY="252.0" text="Deliverable:" />
+      <Label layoutX="63.0" layoutY="320.0" text="3. Press the &quot;Stop this Activity&quot; to generate an effort log entry using the attributes above.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="stopActivity" alignment="CENTER" layoutX="108.0" layoutY="346.0" mnemonicParsing="false" onAction="#onStopActivity" prefHeight="38.0" prefWidth="214.0" text="Stop this Activity" />
+      <Label layoutX="63.0" layoutY="399.0" text="4. Unless you are done for the day, it is best to perform steps 1 and 2 above before resuming work.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="63.0" layoutY="451.0" mnemonicParsing="false" onAction="#onEditor" prefHeight="38.0" prefWidth="194.0" text="Effort Log Editor" />
+      <Button alignment="CENTER" layoutX="693.0" layoutY="451.0" mnemonicParsing="false" onAction="#onLogs" prefHeight="38.0" prefWidth="194.0" text="Effort and Defect Logs" />
+      <Button alignment="CENTER" layoutX="484.0" layoutY="451.0" mnemonicParsing="false" onAction="#onDefinitions" prefHeight="38.0" prefWidth="194.0" text="Definitions" />
+      <Button alignment="CENTER" layoutX="270.0" layoutY="451.0" mnemonicParsing="false" onAction="#onDefectConsole" prefHeight="38.0" prefWidth="194.0" text="Defect Log Console" />
+      <Button alignment="CENTER" disable="true" layoutX="693.0" layoutY="338.0" mnemonicParsing="false" onAction="#onSupervisor" prefHeight="66.0" prefWidth="194.0" text="Supervisor Console" visible="false" />
+   </children>
+</AnchorPane>
